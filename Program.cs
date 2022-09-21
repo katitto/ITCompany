@@ -116,7 +116,7 @@ class Program
             try
             {
                 //Pass the filepath and filename to the StreamWriter Constructor
-                StreamWriter sw = new StreamWriter(@"C:\Users\prokaob\source\repos\KAlmache_Project1\Files\ITCompanyData.txt", true);
+                StreamWriter sw = new StreamWriter(@"C:\ITCompanyData.txt", true);
                 //Write a line of text
                 sw.WriteLine("*****************INCRESE ONE DAY*****************UPDATING DATA....");
                 sw.WriteLine($"IT Company Report: \nIT company is currently composed of : {myTeams.Count} Project Teams and {myFirstTeam1.MyProgrammers.Count * myTeams.Count} Programmers");
@@ -196,7 +196,7 @@ class Program
         }
         public static void FormatJson(List<ProjectTeam> myTeams)
         {
-            var fileName = @"C:\Users\prokaob\source\repos\KAlmache_Project1\Files\JsonData.json";
+            var fileName = @"C:\JsonData.json";
             string jsonString = "";
             foreach (var team in myTeams)
             {     
