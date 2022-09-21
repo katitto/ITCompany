@@ -86,7 +86,7 @@ class Program
             try
             {
                 //Pass the filepath and filename to the StreamWriter Constructor
-                StreamWriter sw = new StreamWriter(@"C:\Users\prokaob\source\repos\KAlmache_Project1\Files\ITCompanyData.txt");
+                StreamWriter sw = new StreamWriter(@"C:\ITCompanyData.txt");
                 //Write a line of text
                 sw.WriteLine($"IT Company Report: \nIT company is currently composed of : {myTeams.Count} Project Teams and {myFirstTeam1.MyProgrammers.Count * myTeams.Count} Programmers");
                 sw.WriteLine($"This month {totalDaysInCharge(myTeams)} days have been consumed by {myFirstTeam1.MyProgrammers.Count * myTeams.Count} programmers and pending days in charge {pendingDaysIncharge(myTeams)}");
